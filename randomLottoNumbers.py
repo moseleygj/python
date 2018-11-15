@@ -1,4 +1,5 @@
 import random
+import mysql.connector 
 x=[]
 z=[]
 for i in range(7):
@@ -11,3 +12,10 @@ for i in range(7):
         print("Number "+str(i+1)+": "+str(x[i]))
 f=open("dummyfile.txt","r")
 print(f.read())
+
+db = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    passwd="password"
+)
+print(db)
