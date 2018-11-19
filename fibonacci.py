@@ -1,8 +1,11 @@
 fib_series=[1,1]
+i=0
+
 print("Enter to amount of fibonacci series you want to iterate through:")
 fib_count=input()
-fib_count-=2
-i=0
+fib_count = int(fib_count)
+fib_count -= 2
+
 while i < fib_count:
     current_num=fib_series[-1]+fib_series[-2]
     fib_series.append(current_num)
