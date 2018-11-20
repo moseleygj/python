@@ -6,6 +6,7 @@ fib_count=input()
 fib_count = int(fib_count)
 fib_count -= 2
 
+
 while i < fib_count:
     current_num=fib_series[-1]+fib_series[-2]
     fib_series.append(current_num)
