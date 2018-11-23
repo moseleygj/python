@@ -11,6 +11,6 @@ while start_num > 0:
 for i in factorial:
     current_num=current_num * int(i)
 
-print(factorial)
-print(current_num)
+##print(factorial)
+print("Factorial of "+ str(factorial[0])+ " is : " +str(current_num))
 
