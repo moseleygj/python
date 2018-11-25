@@ -5,7 +5,6 @@ i=userInput
 h_num = 0
 
 for a in i.split(" "):
-    ##print(a + " - " + str(len(a)))
     print(a)
     print(h_num)
     if len(a) >= h_num:
