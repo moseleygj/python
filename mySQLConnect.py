@@ -11,3 +11,5 @@ mycursor.execute("select name from actors")
 
 for x in mycursor:
   print(str(x) +" - is an actor on family guy" ) 
+
+  #remove extra Bs from result
