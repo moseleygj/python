@@ -1,4 +1,14 @@
 create database books;
+
 use books;
-create table books(number INT NOT NULL AUTO_INCREMENT, title VARCHAR(40),author varchar(40), version INT,ISBN INT, PRIMARY KEY(number));
-insert into books(title,author,version,ISBN) values("Python - Visual QuickStart Guide","Toby Donaldson",1,0321929551);
+
+create table books(number INT NOT NULL AUTO_INCREMENT, title VARCHAR(40),author VARCHAR(40), version INT, ISBN INT, PRIMARY KEY(number));
+
+INSERT INTO books(title,author,version,ISBN) VALUES ("Python - Visual QuickStart Guide","Toby Donaldson",1,0321929551);
+
+
+upload DB
+create database upload;
+use upload;
+create table upload(cat VARCHAR(20) not null, file VARCHAR(40),uploaded date,size decimal,uploader VARCHAR(40));
+INSERT INTO upload(cat,file,uploaded,size,uploader) VALUES ("books","Python - Visual QuickStart Guide","2018-02-12","0.0","John Doe");
